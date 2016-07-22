@@ -1,0 +1,32 @@
+<!--
+Strickland, Dylan
+Assignment 7.23
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reverse Stuff</title>
+</head>
+<body>
+    <h1>Reverse Stuff</h1>
+<p>
+    <input type="text" id="userEntry" />
+    <input type="button" id="btnReverse" value="reverse" />
+</p>
+
+</body>
+<script>document.getElementById("btnReverse").onclick = function(){
+
+var original = document.getElementById("userEntry").value;
+var reversed = "";
+
+for (i = (original.length-1); i > -1; i--){
+    reversed = reversed + original.charAt(i);
+}
+    document.getElementById("userEntry").value = reversed;
+};
+
+</script>
+</html>
